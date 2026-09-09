@@ -1,0 +1,636 @@
+[
+  {
+    "id": "1",
+    "assunto": "Fale quem é o seu melhor amigo",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "2",
+    "assunto": "Já ficou com o(a) ex de algum melhor amigo seu",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "3",
+    "assunto": "É verdade que você já acobertou uma traição de um(a) amigo(a) bem próximo(a)?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "4",
+    "assunto": "Se o seu amigo(a) do mesmo sexo falasse que está a fim de você, você ficaria com ele?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "5",
+    "assunto": "Fale alguma coisa que tem no seu histórico de navegação que você ficaria constrangido se alguém visse;",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "6",
+    "assunto": "Já foi pego furtando algo com o seu melhor amigo?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "7",
+    "assunto": "Qual é o apelido mais vergonhoso que alguém já lhe deu?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "8",
+    "assunto": "Já sentiu ranço/antipatia de algum amigo? Por quê?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "9",
+    "assunto": "Você atiraria no seu melhor amigo por 1 milhão de reais?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "10",
+    "assunto": "Entre um amor e uma amizade, o que você escolhe?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "11",
+    "assunto": "Já terminou com alguém e ficou com seu amigo(a) para fazer ciúmes?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "12",
+    "assunto": "Conte a história mais constrangedora que já aconteceu com você e seu amigo;",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "13",
+    "assunto": "Um PT que você jamais esqueceu?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "14",
+    "assunto": "Você já vomitou em público e teve que engolir?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "15",
+    "assunto": "Qual a foto mais constrangedora que você tem no seu telefone?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "16",
+    "assunto": "Qual foi a fofoca mais polêmica em que você já se meteu?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "17",
+    "assunto": "Qual mãe ou pai já te pegou fazendo algo impróprio? O que?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "18",
+    "assunto": "Qual a pior atitude que um amigo pode tomar contra você?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "19",
+    "assunto": "Se você ganhasse uma passagem para uma ilha deserta, quem você levaria?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "20",
+    "assunto": "Qual o site que você mais acessa quando não tem ninguém por perto?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "21",
+    "assunto": "Três coisas que ninguém sabe que você fez, mas será contado agora?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "22",
+    "assunto": "Qual a maior mentira você já contou?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "23",
+    "assunto": "Qual foi a coisa mais estranha que você já fez na frente de um espelho?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "24",
+    "assunto": "O seu maior segredo obscuro que você não teria coragem de contar?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "25",
+    "assunto": "O que é mais importante: família, dinheiro ou Deus?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "26",
+    "assunto": "Você acredita que Deus existe? Por quê?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "27",
+    "assunto": "Qual é o legado que você quer que as pessoas se lembrem quando você morrer?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "28",
+    "assunto": "Ter um bebê sem um parceiro ou ter um parceiro sem um bebê?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "29",
+    "assunto": "Qual é a coisa mais estranha que você faz ou fez com a sua família?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "30",
+    "assunto": "Qual foi a coisa mais vergonhosa que você já fez por um amigo?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "31",
+    "assunto": "Qual é a sua definição de uma pessoa \"mal\"?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "32",
+    "assunto": "Qual foi a decisão que você tomou na vida que fez com que você sentisse vergonha?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "33",
+    "assunto": "Você acredita em amor? Por quê?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "34",
+    "assunto": "Acredita em destino ou acha que as coisas acontecem por um motivo específico?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "35",
+    "assunto": "Acha que as pessoas que têm bastante fé são exageradas?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "36",
+    "assunto": "Qual foi a coisa mais bizarra que você fez quando era criança?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "37",
+    "assunto": "Você tem medo de morrer?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "38",
+    "assunto": "Se pudesse escolher, de que jeito você escolheria morrer?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "39",
+    "assunto": "Morrer afogado ou queimado?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "40",
+    "assunto": "Você acredita em propósito de vida? Acha que você tem um?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "41",
+    "assunto": "Um hábito seu que as pessoas possam considerar estranho ou feio?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "42",
+    "assunto": "Uma teoria da conspiração que seja capaz de criar uma grande discussão?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "43",
+    "assunto": "Como você organizaria esses três pontos em ordem de importância na sua vida: amor, família e carreira?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "44",
+    "assunto": "Você gosta dos seus parentes? Por quê?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "45",
+    "assunto": "O que você quer que esteja escrito na sua lápide?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "46",
+    "assunto": "Você acredita em extraterrestres? Por quê?",
+    "categoria": "Ciência"
+  },
+  {
+    "id": "47",
+    "assunto": "Acredita que a rainha Elizabeth seja uma reptiliana? Por quê?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "48",
+    "assunto": "Você se considera uma pessoa espiritual ou religiosa?",
+    "categoria": "Religião"
+  },
+  {
+    "id": "49",
+    "assunto": "A coisa mais louca que você faria por um amigo?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "50",
+    "assunto": "Você acredita em amizade entre sexos opostos?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "51",
+    "assunto": "Se você fosse morrer hoje, do que você se arrependeria e do que você não se arrependeria?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "52",
+    "assunto": "Um motivo para odiar seus parentes?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "53",
+    "assunto": "Acreditar na fé ou na ciência?",
+    "categoria": "Religião"
+  },
+  {
+    "id": "54",
+    "assunto": "Realidade ou imaginação?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "55",
+    "assunto": "Seu melhor conselho dado até hoje?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "56",
+    "assunto": "Estar sozinho, porém bem, ou, estar no meio de tantas pessoas e se sentir sozinho?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "57",
+    "assunto": "Quais arrependimentos te matariam hoje?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "58",
+    "assunto": "Um milhão de reais e ser sozinho pra sempre ou um amor pra vida toda e ser pobre para sempre?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "59",
+    "assunto": "Ser criança ou crescer?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "60",
+    "assunto": "Qual foi a coisa mais fútil que você gastou seu dinheiro?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "61",
+    "assunto": "Qual a briga mais idiota que você já entrou?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "62",
+    "assunto": "Se você pudesse fazer um desejo obscuro agora, qual seria?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "63",
+    "assunto": "Qual foi seu pensamento mais brutal em relação a uma pessoa ate hoje?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "64",
+    "assunto": "Viver sem dinheiro ou sem amor?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "65",
+    "assunto": "A coisa mais ridícula que você fez e envergonhou seus pais?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "66",
+    "assunto": "A cena mais constrangedora que você já pegou seus pais?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "67",
+    "assunto": "Reviver para sempre o passado ou conhecer o futuro por 15 segundos?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "68",
+    "assunto": "Casaria por dinheiro?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "69",
+    "assunto": "Ficaria com um ex de algum amigo por dinheiro, mesmo sabendo que isso pode magoar a pessoa?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "70",
+    "assunto": "Uma verdade que ninguém aceita?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "71",
+    "assunto": "Um pedido inusitado para se fazer a um gênio da lâmpada?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "72",
+    "assunto": "Deixaria de falar com a pessoa que você mais gosta por dinheiro?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "73",
+    "assunto": "Vazaria algum vídeo íntimo seu para ganhar dinheiro?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "74",
+    "assunto": "Roubaria algum item de valor por querer muito aquilo?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "75",
+    "assunto": "Escolha entre um dos dois: amor ou amizade?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "76",
+    "assunto": "Se um palavrão fosse uma pessoal, você se casaria com o que você mais fala?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "77",
+    "assunto": "Você já fez xixi nas calças depois de adulto?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "78",
+    "assunto": "Uma coisa que você espera que seus pais nunca descubram que você fez?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "79",
+    "assunto": "Algo infantil que você ainda faz?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "80",
+    "assunto": "Qual foi o maior boato que você não fez questão de desmentir sobre si mesmo?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "81",
+    "assunto": "Uma coisa do seu quarto que você sente vergonha de ter ali?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "82",
+    "assunto": "A coisa mais cruel que já fizeram com você?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "83",
+    "assunto": "Qual foi o momento mais constrangedor que você já passou ao lado do crush?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "84",
+    "assunto": "A pior coisa que você fez/faria por dinheiro?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "85",
+    "assunto": "Trairia quem você ama (amigo ou namoro) em troca de dinheiro?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "86",
+    "assunto": "Viver um amor de novela ou um amor simples?"
+  },
+  {
+    "id": "87",
+    "assunto": "Beber até cair em uma balada ou ficar em casa curtindo com os amigos?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "88",
+    "assunto": "Algo que você fez que acredita não ter perdão na hora do Juízo Final?",
+    "categoria": "Religião"
+  },
+  {
+    "id": "89",
+    "assunto": "Ter religião ou ter fé?",
+    "categoria": "Religião"
+  },
+  {
+    "id": "90",
+    "assunto": "Acredita que os mortos possam se comunicar com os vivos?",
+    "categoria": "Religião"
+  },
+  {
+    "id": "91",
+    "assunto": "Qual a experiência mais sobrenatural que já aconteceu com você?",
+    "categoria": "Religião"
+  },
+  {
+    "id": "92",
+    "assunto": "Prefere manter contato com os vivos ou com os mortos?",
+    "categoria": "Religião"
+  },
+  {
+    "id": "93",
+    "assunto": "Você se arrepende de algo na sua vida?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "94",
+    "assunto": "Quando você pensa na sua infância, qual foi a pessoa que mais te marcou e por qual motivo?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "95",
+    "assunto": "Qual foi a maior mudança que aconteceu na sua vida?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "96",
+    "assunto": "Como que vocês costumavam comemorar eventos importantes, como aniversário ou casamento?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "97",
+    "assunto": "Qual foi o melhor presente que você já recebeu na sua infância?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "98",
+    "assunto": "O que você queria ser quando crescer, quando você era criança?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "99",
+    "assunto": "Quais foram os principais valores e princípios com os quais você cresceu?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "100",
+    "assunto": "Qual era a sua comida preferida quando você era pequeno?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "101",
+    "assunto": "Como você aprendeu a andar de bicicleta ou a dirigir?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "102",
+    "assunto": "Quais são os maiores sucessos da sua vida?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "103",
+    "assunto": "Se você pudesse fazer uma pergunta para um antepassado seu, o que e para quem você perguntaria?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "104",
+    "assunto": "Existe alguém dos seus antepassados que você gostaria de ter encontrado?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "105",
+    "assunto": "O que você acha que os seus familiares falarão sobre você, no dia do seu enterro?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "106",
+    "assunto": "Qual foi a fase preferida da sua vida e porquê?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "107",
+    "assunto": "Qual foi a maior tragédia que você passou pela sua vida até agora?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "108",
+    "assunto": "Você está satisfeito com a sua escolha profissional?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "109",
+    "assunto": "Quem foi a pessoa que mais lhe influenciou na sua vida?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "110",
+    "assunto": "O que você gostaria que os seus filhos aprendessem com você? E qual seria a maior lição que você espera ter passado?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "111",
+    "assunto": "Qual é o seu bem mais precioso?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "112",
+    "assunto": "Que lugar você gostaria de conhecer?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "113",
+    "assunto": "Qual é a sua lembrança preferida?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "114",
+    "assunto": "Qual o seu filme favorito?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "115",
+    "assunto": "Qual sua banda/ artista favorito?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "116",
+    "assunto": "Qual sua música favorita?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "117",
+    "assunto": "Harry Potter ou Senhor dos Anéis",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "118",
+    "assunto": "Qual gênero de filme você mais gosta?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "119",
+    "assunto": "Qual seu  estilo de música favorita?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "120",
+    "assunto": "Quando você era criança qual desenho você mais gostava?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "121",
+    "assunto": "Marvel ou DC?",
+    "categoria": "Entretenimento"
+  },
+  {
+    "id": "122",
+    "assunto": "Como você acha que será o mundo daqui a 100 anos?",
+    "categoria": "Pessoal"
+  },
+  {
+    "id": "123",
+    "assunto": "Para você, qual o melhor jogador de futebol que ja existiu",
+    "categoria": "Esporte"
+  },
+  {
+    "id": "124",
+    "assunto": "Para você qual atleta serve de inspiração para todos?",
+    "categoria": "Esporte"
+  },
+  {
+    "id": "125",
+    "assunto": "Como você acha que o mundo seria se fosse uma anarquia?",
+    "categoria": "Política"
+  },
+  {
+    "id": "126",
+    "assunto": "“Finjo concordar com pessoas chatas só para elas calarem a boca”. Desconhecido. Você também é assim?",
+    "categoria": "Filosofia"
+  },
+  {
+    "id": "127",
+    "assunto": "Qual seu esporte preferido?",
+    "categoria": "Esporte"
+  }
+]

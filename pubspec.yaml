@@ -1,0 +1,45 @@
+name: ice_breaker_app
+description: "A Flutter project inspired by daopapoapp."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  card_swiper: ^3.0.1
+  share_plus: ^13.3.0
+  google_mobile_ads: ^9.1.0
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/drop_down_icon.png
+    - assets/images/ice_breaker_logo.png
+    - assets/images/menu_icon.png
+    - assets/images/search_icon.png
+    - assets/images/profile_icon.png
+    - lib/mocks/pt/
+    - lib/mocks/en/
+    - lib/mocks/es/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/ice_breaker_logo.png
+  remove_alpha_ios: true
+
+

@@ -1,0 +1,9 @@
+[
+  { "id": "1", "nome": "Personal" },
+  { "id": "2", "nome": "Religión" },
+  { "id": "3", "nome": "Ciencia" },
+  { "id": "4", "nome": "Entretenimiento" },
+  { "id": "5", "nome": "Deporte" },
+  { "id": "6", "nome": "Política" },
+  { "id": "7", "nome": "Filosofía" }
+]
