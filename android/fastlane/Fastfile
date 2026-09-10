@@ -1,0 +1,30 @@
+default_platform(:android)
+
+platform :android do
+  desc "Upload a prebuilt AAB to Google Play (track defaults to internal)"
+  lane :deploy do |options|
+    track = options[:track] || "internal"
+    aab_path = options[:aab] || "../build/app/outputs/bundle/release/app-release.aab"
+    mapping_path = "../build/app/outputs/mapping/release/mapping.txt"
+
+    params = {
+      track: track,
+      aab: aab_path,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true
+    }
+
+    if ENV["GOOGLE_APPLICATION_CREDENTIALS"] && !ENV["GOOGLE_APPLICATION_CREDENTIALS"].empty?
+      params[:json_key] = ENV["GOOGLE_APPLICATION_CREDENTIALS"]
+    elsif ENV["GOOGLE_PLAY_JSON_KEY"] && !ENV["GOOGLE_PLAY_JSON_KEY"].empty?
+      params[:json_key_data] = ENV["GOOGLE_PLAY_JSON_KEY"]
+    end
+
+    if File.exist?(mapping_path)
+      params[:mapping] = mapping_path
+    end
+
+    upload_to_play_store(**params)
+  end
+end

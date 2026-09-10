@@ -1,0 +1,156 @@
+name: Android Release
+
+on:
+  push:
+    branches:
+      - "release/**"
+  workflow_dispatch:
+    inputs:
+      track:
+        description: "Play Store track"
+        required: true
+        default: "internal"
+        type: choice
+        options:
+          - internal
+          - alpha
+          - beta
+          - production
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    concurrency:
+      group: android-release-${{ github.ref }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "zulu"
+          java-version: "17"
+          cache: gradle
+
+      - name: Setup Ruby (Fastlane)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+          working-directory: android
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.41.0"
+          cache: true
+
+      - name: Cache Pub
+        uses: actions/cache@v4
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('pubspec.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('android/**/build.gradle*', 'android/**/settings.gradle*', 'android/gradle.properties', 'android/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Run tests
+        run: flutter test
+
+      - name: Decode Android keystore
+        run: |
+          printf '%s' "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/upload-keystore.jks
+
+      - name: Create key.properties
+        run: |
+          cat <<EOF > android/key.properties
+          storePassword=${{ secrets.KEYSTORE_PASSWORD }}
+          keyPassword=${{ secrets.KEY_PASSWORD }}
+          keyAlias=${{ secrets.KEY_ALIAS }}
+          storeFile=upload-keystore.jks
+          EOF
+
+      - name: Compute version
+        id: version
+        run: |
+          VERSION_LINE=$(grep "^version:" pubspec.yaml | awk '{print $2}')
+          BUILD_NAME=${VERSION_LINE%%+*}
+          BUILD_NUMBER=${GITHUB_RUN_NUMBER}
+          echo "build_name=$BUILD_NAME" >> $GITHUB_OUTPUT
+          echo "build_number=$BUILD_NUMBER" >> $GITHUB_OUTPUT
+
+      - name: Resolve Play Store track
+        id: play
+        run: |
+          TRACK="${{ github.event.inputs.track }}"
+          if [ -z "$TRACK" ]; then
+            TRACK="internal"
+          fi
+          echo "track=$TRACK" >> $GITHUB_OUTPUT
+
+      - name: Build AAB (release)
+        env:
+          GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g -Dkotlin.incremental=false"
+          CHOKIDAR_USEPOLLING: "true"
+        run: |
+          ( while true; do echo "::notice::Building Android AAB... $(date -u +%H:%M:%S)"; sleep 60; done ) &
+          HEARTBEAT_PID=$!
+          set +e
+          flutter build appbundle --release \
+            --target-platform android-arm,android-arm64 \
+            --build-name "${{ steps.version.outputs.build_name }}" \
+            --build-number "${{ steps.version.outputs.build_number }}"
+          STATUS=$?
+          kill $HEARTBEAT_PID || true
+          exit $STATUS
+
+      - name: Upload AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-release-aab
+          path: build/app/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
+
+      - name: Debug when build fails
+        if: failure()
+        run: |
+          echo "=== flutter doctor -v ==="
+          flutter doctor -v || true
+          echo "=== Java ==="
+          java -version || true
+          echo "=== Gradle wrapper ==="
+          (cd android && ./gradlew --version) || true
+          echo "=== Android outputs ==="
+          ls -la build/app/outputs || true
+          echo "=== Disk ==="
+          df -h || true
+
+      - name: Deploy to Play Store
+        if: startsWith(github.ref, 'refs/heads/release/') || github.event_name == 'workflow_dispatch'
+        env:
+          GOOGLE_PLAY_JSON_KEY: ${{ secrets.GOOGLE_PLAY_JSON_KEY }}
+        run: |
+          if [ -z "$GOOGLE_PLAY_JSON_KEY" ]; then
+            echo "Missing secret: GOOGLE_PLAY_JSON_KEY"
+            exit 1
+          fi
+          printf '%s' "$GOOGLE_PLAY_JSON_KEY" > android/play-store-key.json
+          export GOOGLE_APPLICATION_CREDENTIALS="$PWD/android/play-store-key.json"
+          cd android
+          bundle exec fastlane deploy track:${{ steps.play.outputs.track }}

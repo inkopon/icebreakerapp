@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+# Keep Fastlane pinned for reproducible CI.
+gem "fastlane", "~> 2.226"
