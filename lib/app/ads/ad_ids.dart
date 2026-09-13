@@ -5,16 +5,20 @@ import 'package:flutter/foundation.dart';
 class AdIds {
   AdIds._();
 
-  // App ID copied from runninghitapp, per project reference.
-  static const String applicationId = 'ca-app-pub-8058177413315087~6584092902';
+  static const String applicationId = 'ca-app-pub-8058177413315087~5237827848';
 
-  // Create dedicated Ice Breaker release units in AdMob and fill these values.
-  static const String _androidHomeBannerRelease = '';
-  static const String _iosHomeBannerRelease = '';
-  static const String _androidRefreshInterstitialRelease = '';
-  static const String _iosRefreshInterstitialRelease = '';
-  static const String _androidAppOpenRelease = '';
-  static const String _iosAppOpenRelease = '';
+  static const String _androidHomeBannerRelease =
+      'ca-app-pub-8058177413315087/4745034483';
+  static const String _iosHomeBannerRelease =
+      'ca-app-pub-8058177413315087/8323343533';
+  static const String _androidRefreshInterstitialRelease =
+      'ca-app-pub-8058177413315087/7067945495';
+  static const String _iosRefreshInterstitialRelease =
+      'ca-app-pub-8058177413315087/4986733755';
+  static const String _androidAppOpenRelease =
+      'ca-app-pub-8058177413315087/4519829895';
+  static const String _iosAppOpenRelease =
+      'ca-app-pub-8058177413315087/4384098522';
 
   // Official Google sample ad unit IDs for development builds.
   static const String _androidHomeBannerTest =
